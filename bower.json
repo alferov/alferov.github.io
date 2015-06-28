@@ -1,7 +1,5 @@
 {
-  "name": "alferov github io",
-  "private": true,
-  "dependencies": {
-    "bootstrap-sass-official": "~3.3.4"
-  }
+  "name": "alferov-github-io",
+  "version": "0.0.0",
+  "dependencies": {}
 }
