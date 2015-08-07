@@ -5,6 +5,7 @@ import browserSync from 'browser-sync';
 import del from 'del';
 import {stream as wiredep} from 'wiredep';
 import ghPages from 'gulp-gh-pages';
+import moment from 'moment';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -169,6 +170,6 @@ gulp.task('deploy', ['build'], () => {
     .pipe(ghPages({
       remoteUrl: 'https://github.com/alferov/alferov.github.io',
       branch: 'master',
-      message: ':package: Beep bop [timestamp]'
+      message: ':package: Beep bop ' + moment().format()
     }));
 });
