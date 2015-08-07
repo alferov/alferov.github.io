@@ -1,7 +1,9 @@
 {
   "name": "alferov-github-io",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "roboto-fontface": "~0.4.3"
+  },
   "devDependencies": {
     "chai": "~3.2.0",
     "mocha": "~2.2.5"
