@@ -166,5 +166,9 @@ gulp.task('default', ['clean'], () => {
 
 gulp.task('deploy', ['build'], () => {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages({ branch: 'master', message: ':package: Beep bop [timestamp]'}));
+    .pipe(ghPages({
+      remoteUrl: 'https://github.com/alferov/alferov.github.io',
+      branch: 'master',
+      message: ':package: Beep bop [timestamp]'
+    }));
 });
